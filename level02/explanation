@@ -24,3 +24,14 @@ RESULT (truncated):
 *still not really readable but we can see a user trying to connect with login and password*
 
 https://gitlab.com/wireshark/wireshark
+
+*using wireshark to read all packet send from 59.233.235.218 (user)*
+
+ip.src == 59.233.235.218  *filter in wireshark
+
+*then we write all the character send by the user while being carefull about the delete*
+
+PASSWORD: ft_waNDReL0L
+
+then su flag02 and getflag
+
