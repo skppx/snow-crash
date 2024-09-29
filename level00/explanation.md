@@ -1,13 +1,17 @@
-COMMAND : find / -user flag00 | less
+```sh
+$: find / -user flag00 | less
+/usr/sbin/john
+/rofs/usr/sbin/john
+```
 
 "find / -user flag00" : find all file from user flag00
 "less" : for not display error message
 
-RESULT: /usr/sbin/john
-        /rofs/usr/sbin/john
 
-COMMAND: cat /usr/sbin/john
-RESULT: cdiiddwpgswtgt       # cypher pasword
+```sh
+$: cat /usr/sbin/john
+cdiiddwpgswtgt       # cypher pasword
+```
 
 find the encryption type with dCode website : https://www.dcode.fr/identification-chiffrement
 

@@ -1,5 +1,7 @@
-COMMAND:    ls
-RESULT:     level02.cpap
+```sh
+$: ls
+level02.cpap
+```
 
 RESEARCH:   https://en.wikipedia.org/wiki/Pcap
             https://serverfault.com/questions/38626/how-can-i-read-pcap-files-in-a-friendly-format
@@ -21,15 +23,15 @@ RESULT (truncated):
             E..4..@.@.J.;...;....O/Y.......M...s.......
             ......X.
 
-*still not really readable but we can see a user trying to connect with login and password*
+**still not really readable but we can see a user trying to connect with login and password**
 
 https://gitlab.com/wireshark/wireshark
 
-*using wireshark to read all packet send from 59.233.235.218 (user)*
+**using wireshark to read all packet send from 59.233.235.218 (user)**
 
 ip.src == 59.233.235.218  *filter in wireshark
 
-*then we write all the character send by the user while being carefull about the delete*
+**then we write all the character send by the user while being carefull about the delete**
 
 PASSWORD: ft_waNDReL0L
 

